@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x =np.array(['mon','tues','wed','thurs','fri'])
+y =np.array([300,450,150,400,650])
+plt.subplot(1, 2, 1)
+plt.plot(x,y,color='c',linestyle='dotted',marker='h',mfc='m',mec='k')
+plt.xlabel('Days')
+plt.ylabel('Sales of Drinks')
+plt.title('Sales data1',loc='right')
+x =np.array(['mon','tues','wed','thurs','fri'])
+y =np.array([400,500,350,300,500])
+plt.subplot(1, 2, 2)
+plt.plot(x,y,color='y',linestyle='dashed',marker='d',mfc='g',mec='r')
+plt.xlabel('Days')
+plt.ylabel('Sales of Food')
+plt.title('Sales data2',loc='center')
+plt.show()

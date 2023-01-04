@@ -1,0 +1,11 @@
+import numpy as np
+arr = np.random.randint(10,size=(3,3))
+print(arr)
+print("inverse is:",np.linalg.inv(arr))
+print("determinant is:",np.linalg.det(arr))
+print("initial_array is:",str(arr))
+result = arr.flatten()
+print("new resulting 1D array:",result)
+a,b =np.linalg.eig(arr)
+print("eigen value is:",a)
+print("eigen vector is:",b)
